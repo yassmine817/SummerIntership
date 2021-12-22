@@ -1,0 +1,65 @@
+
+<section>
+    <div class="block no-padding  gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner2">
+                        <div class="inner-title2">
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="block remove-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="account-popup-area signin-popup-box static">
+                        <div class="account-popup">
+                           <h1>Signin</h1>
+                            <form 
+                                name="form"
+                                (ngSubmit)="f.form.valid && onSubmit()"
+                                #f="ngForm">
+                                <div class="cfield">
+                                    <input type="Email" placeholder="Email" name="email"
+                                    [(ngModel)]="form.email"
+                                    required/>
+                                    <i class="la la-user"></i>
+                                </div>
+                                <div class="cfield">
+                                    <input type="password" placeholder="********" name="password"
+                                    [(ngModel)]="form.password"
+                                    required
+                                    minlength="6" />
+                                    <i class="la la-key"></i>
+                                </div>
+                                <p class="remember-label">
+                                    <input type="checkbox" name="cb" id="cb1"><label for="cb1">Remember me</label>
+                                </p>
+                                <a href="#" title="">Forgot Password?</a>
+                                <button type="submit" >Login</button>
+                                
+                            </form>
+                            <span>you don't have an account ? <b>Signup now !</b></span>
+                            <div class="extra-login">
+                                <span>Or</span>
+                                <div class="login-social">
+                                    <a class="fb-login" href="#" title=""><i class="fa fa-facebook"></i></a>
+                                    <a class="tw-login" href="#" title=""><i class="fa fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

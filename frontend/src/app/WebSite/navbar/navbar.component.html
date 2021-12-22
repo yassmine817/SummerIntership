@@ -1,0 +1,45 @@
+<header class="stick-top forsticky">
+    <div class="menu-sec">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" title=""><img class="hidesticky" src="../../../assets/images/resource/logo.png" alt="" /><img class="showsticky" src="../../../assets/images/resource/logo10.png" alt="" /></a>
+            </div><!-- Logo -->
+            <div class="btn-extars">
+                <a href="#" title="" class="post-job-btn"><i class="la la-plus"></i>Post Jobs</a>
+                <ul class="account-btns">
+                    <li class="signup-popup"><a title="" routerLink='/register'><i class="la la-key"></i> Sign Up</a></li>
+                    <li class="signin-popup"><a title="" routerLink='/login'><i class="la la-external-link-square" ></i> Login</a></li>
+                    <li class=""><a title=""  *ngIf="isLoggedIn"  routerLink='/dashboard'><i class="la la-user" ></i> {{fullname}}</a></li>
+
+                </ul>
+            </div><!-- Btn Extras -->
+            <nav>
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a routerLink='/' title="">Home</a>
+                       
+                    </li>
+                    
+                    <li class="menu-item-has-children">
+                        <a href="#" title="">Blog</a>
+                       
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" title="">Summer InternShip</a>
+                        
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" title="">About us</a>
+                        <ul>
+                            <li><a href="about.html" title="">About Us</a></li>
+                        
+                            <li><a href="how_it_works.html" title="">How it works</a></li>
+                            <li><a href="terms_and_condition.html" title="">Terms & Condition</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav><!-- Menus -->
+        </div>
+    </div>
+</header>
+
